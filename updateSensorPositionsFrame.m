@@ -49,11 +49,11 @@ for h = 1:height(sensorLevelRbTimeseries)
 
     % Find the axis type of the current sensor
     switch true
-        case endsWith(grad.label{h}, '-X')
+        case startsWith(grad.label{h}, 'X')
             sensAxis = 1;
-        case endsWith(grad.label{h}, '-Y')
+        case startsWith(grad.label{h}, 'Y')
             sensAxis = 2;
-        case endsWith(grad.label{h}, '-Z')
+        case startsWith(grad.label{h}, 'Z')
             sensAxis = 3;
         otherwise
             error('Unexpected label suffix.');
