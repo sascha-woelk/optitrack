@@ -1,4 +1,4 @@
-function [sensorLevelRbTimeseries] = getChannelLevelRigidBodyTimeseries_CUSTOM(cfg)
+function [sensorLevelRbTimeseries] = getChannelLevelRigidBodyTimeseries(cfg)
 % This function outputs a cell array of tables containing rigid body
 % information for each sensor position provided. The inputs are the
 % sensorPositions from extractSensorPositions_V3, the rigidBodyT from
